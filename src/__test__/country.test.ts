@@ -221,6 +221,11 @@ const executeAllTests = (Country: any) => {
 			const country: ICountry = Country.getCountryByCode(code);
 			expect(country).toEqual(code);
 		});
+
+		test('Check for get all african countries', () => {
+			const africans = Country.getAllAfricanCountries();
+			expect(africans[0].name).toEqual('Algeria');
+		});
 	});
 };
 

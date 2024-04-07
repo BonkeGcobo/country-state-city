@@ -1,4 +1,6 @@
-const africanCountries = [
+import { ICountry } from '../interface';
+
+const africanCountries: ICountry[] = [
 	{
 		name: 'Algeria',
 	},
