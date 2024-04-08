@@ -226,6 +226,29 @@ const executeAllTests = (Country: any) => {
 			const africans = Country.getAllAfricanCountries();
 			expect(africans[0].name).toEqual('Algeria');
 		});
+
+		test('Check for get all african countries', () => {
+			const africans = Country.getAllAfricanCountries();
+			const firstCountry = {
+				isoCode: 'DZ',
+				name: 'Algeria',
+				phonecode: '213',
+				flag: '🇩🇿',
+				currency: 'DZD',
+				latitude: '28.00000000',
+				longitude: '3.00000000',
+				timezones: [
+					{
+						zoneName: 'Africa/Algiers',
+						gmtOffset: 3600,
+						gmtOffsetName: 'UTC+01:00',
+						abbreviation: 'CET',
+						tzName: 'Central European Time',
+					},
+				],
+			};
+			expect(africans[0]).toEqual(firstCountry);
+		});
 	});
 };
 
