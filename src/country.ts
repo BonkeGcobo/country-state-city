@@ -15,7 +15,7 @@ function getAllCountries(): ICountry[] {
 	return countryList;
 }
 
-// Get a list of all countries.
+// Get a list of all african countries.
 function getAllAfricanCountries(): ICountry[] {
 	const africanCountryNames = africanCountries.map((country) => {
 		return country.name;
